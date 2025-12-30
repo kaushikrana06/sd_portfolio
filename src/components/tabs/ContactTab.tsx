@@ -41,6 +41,81 @@ export function ContactTab() {
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
+  
+// const handleSubmit = async (e: React.FormEvent) => {
+//     e.preventDefault();
+//     setIsSubmitting(true);
+
+//     const log = async (text: string) => {
+//       setTerminalLines((prev) => [...prev, text]);
+//       await new Promise((r) => setTimeout(r, 300));
+//     };
+
+//     try {
+//       await log(`$ Connecting to mail server...`);
+//       await log(`$ Name: ${formState.name}`);
+//       await log(`$ Phone: ${formState.phone}`);
+//       await log(`$ From: ${formState.email}`);
+//       await log(`$ Subject: ${formState.subject}`);
+
+//       // Start progress
+//       setTerminalLines((prev) => [...prev, `$ Sending ██████████ 0%`]);
+
+//       await updateProgress(10);
+//       await updateProgress(30);
+//       await updateProgress(60);
+//       await updateProgress(90);
+
+//       // SEND EMAIL (real action)
+//       await emailjs.send(
+//         import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+//         import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+//         {
+//           name: formState.name,
+//           email: formState.email,
+//           phone: formState.phone,
+//           subject: formState.subject,
+//           message: formState.message,
+//         },
+//         import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+//       );
+
+//       // Auto-reply
+//       await emailjs.send(
+//         import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+//         import.meta.env.VITE_EMAILJS_AUTOREPLY_TEMPLATE_ID!,
+//         {
+//           name: formState.name,
+//           email: formState.email,
+//           phone: formState.phone,
+//           subject: formState.subject,
+//           message: formState.message,
+//         },
+//         import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+//       );
+
+//       // Final success
+//       setTerminalLines((prev) => [
+//         ...prev.slice(0, -1),
+//         `$ Sending ██████████ 100% ✓`,
+//         `$ Message sent successfully`,
+//         `$ Auto-reply sent to ${formState.name} ✓`,
+//       ]);
+
+//       setIsSubmitted(true);
+//     } catch (error) {
+//       console.error(error);
+
+//       setTerminalLines((prev) => [
+//         ...prev.slice(0, -1),
+//         `$ ERROR: Failed at sending stage ✗`,
+//         `$ Please try again later`,
+//       ]);
+//     } finally {
+//       setIsSubmitting(false);
+//     }
+//   };
+
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormState((prev) => ({

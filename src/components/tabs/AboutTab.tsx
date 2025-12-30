@@ -97,10 +97,10 @@ export function AboutTab() {
             whileHover={{ scale: 1.05 }}
             className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-glow-cyan flex items-center justify-center text-3xl font-bold text-primary-foreground"
           >
-            <img src="/kaushik.jpeg" alt="kaushik rana" className="w-24 h-24 rounded-full object-cover" />
+            <img src="/kaushik.jpeg" alt="Kaushik Rana" className="w-24 h-24 rounded-full object-cover" />
           </motion.div>
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-foreground mb-2">kaushik rana</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Kaushik Rana</h1>
             <div className="h-[28px] overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.p
