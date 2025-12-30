@@ -58,14 +58,12 @@ export function AboutTab() {
   const lines = content.trim().split("\n");
   const roles = [
     "Software Engineer",
-    "Frontend Developer",
+    "FullStack Developer",
     "React & TypeScript Specialist",
-    "AI-Driven UI Engineer",
-    "Full-Stack MERN Developer",
     "AI Software Engineer",
-    "Next.js Developer",
+    "Django Developer",
+    "AWS Enthusiast",
     "React Developer",
-    "UI/UX Developer"
   ];
   const [index, setIndex] = useState(0);
 

@@ -16,7 +16,7 @@ interface StatusBarProps {
   activeTab: TabId;
 }
 
-const techStack = ["React", "TypeScript", "Next.js", "MERN", "AWS"];
+const techStack = ["React", "TypeScript", "Django", "JAVA", "AWS"];
 
 const tabFileMap: Record<TabId, string> = {
   welcome: "welcome.tsx",
