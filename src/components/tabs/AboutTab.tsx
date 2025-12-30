@@ -5,21 +5,21 @@ import { useEffect, useState } from "react";
 const content = `
 # kaushik rana
 
-## AI Software Engineer
+## Software Engineer
 
 
 
-Building scalable web applications with the MERN stack. Specializing in high-performance frontend experiences, 
-robust Node.js backends, and production-ready full-stack solutions using MongoDB, Express, React, and Next.js.
+Building scalable web applications with the Django and React. Specializing in high-performance fullstack experiences, 
+robust Django backends, and production-ready full-stack solutions using ProstgreSQL, Python, React, and AWS.
 
 ## About Me
 
-Hi, I am kaushik rana, a problem-solving oriented MERN Stack Developer with 2+ years of hands-on experience building scalable, 
+Hi, I am kaushik rana, a problem-solving oriented Full Stack Developer with 2+ years of hands-on experience building scalable, 
 high-performance web applications. I enjoy working on unique, real-world projects that solve meaningful problems.
 
-My expertise spans the full full-stack development lifecycle—from crafting responsive React interfaces to designing robust Node.js 
-& Express APIs and optimizing MongoDB databases for scale and performance.I believe in building applications that are not just functional, 
-but also maintainable, reliable, and production-ready.
+My expertise spans the full-stack development lifecycle—from crafting responsive React interfaces to designing robust Django 
+& FastAPIs and optimizing PostgreSQL databases for scale and performance.I believe in building applications that are not just functional, 
+but also scalable, reliable, and production-ready.
 
 ---
 
@@ -34,19 +34,10 @@ I ask: What problem are we solving? Who benefits? How do we measure success?
 
 ## Education
 
-- **Petbindhi D.K.M High School** — 12th Grade - WBCHSE
-- **Jhargram Raj College** — Bachelor of Arts (B.A.)
-- **Code with Random** — Web Development Basics
-- **Masai School** — React Development
-- **Get SDE Ready** — Next.js Projects
-- **Bengali Coding Academy** — MERN Stack
+- **Carmel Junior College** — 12th Grade - WBCHSE
+- **Heritage Institute of Technology** — B.Tech in Computer Science and Engineering
+
 ---
-
-## Certifications
-
-- AWS Certified Machine Learning Specialty
-- Google Cloud Professional ML Engineer
-- TensorFlow Developer Certificate
 `;
 
 
@@ -108,7 +99,7 @@ export function AboutTab() {
             whileHover={{ scale: 1.05 }}
             className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-glow-cyan flex items-center justify-center text-3xl font-bold text-primary-foreground"
           >
-            <img src="/kaushik.png" alt="kaushik rana" className="w-24 h-24 rounded-full object-cover" />
+            <img src="/kaushik.jpeg" alt="kaushik rana" className="w-24 h-24 rounded-full object-cover" />
           </motion.div>
           <div className="flex-1">
             <h1 className="text-3xl font-bold text-foreground mb-2">kaushik rana</h1>
@@ -136,7 +127,7 @@ export function AboutTab() {
               </span>
               <span className="flex items-center gap-1">
                 <Mail size={14} />
-                kaushikrana7215@gmail.com
+                kaushikrana.0603@gmail.com
               </span>
               <span className="flex items-center gap-1">
                 <Calendar size={14} />
@@ -167,8 +158,8 @@ export function AboutTab() {
             transition={{ delay: 0.2 }}
             className="text-lg text-foreground/90 leading-relaxed mb-8"
           >
-            Building scalable web applications with the MERN stack. Specializing in high-performance frontend experiences, robust Node.js backends,
-            and production-ready full-stack solutions using MongoDB, Express, React, and Next.js.
+            Building scalable web applications with the Django and Reactjs. Specializing in high-performance frontend experiences, robust Django backends,
+            and production-ready full-stack solutions using PostgreSQL, Django, React, and AWS.
           </motion.p>
 
           <motion.div
@@ -182,12 +173,12 @@ export function AboutTab() {
               About Me
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Hi, I am kaushik rana, a problem-solving oriented MERN Stack Developer with 2+ years of hands-on experience building scalable,
+              Hi, I am kaushik rana, a problem-solving oriented Full Stack Developer with 2+ years of hands-on experience building scalable,
               high-performance web applications. I enjoy working on unique, real-world projects that solve meaningful problems.
             </p>
             <p className="text-foreground/80 leading-relaxed">
-              My expertise spans the full full-stack development lifecycle—from crafting responsive React interfaces to designing robust Node.js
-              & Express APIs and optimizing MongoDB databases for scale and performance.I believe in building applications that are not just functional,
+              My expertise spans the full-stack development lifecycle—from crafting responsive React interfaces to designing robust Django
+              & Express APIs and optimizing PostgreSQL databases for scale and performance.I believe in building applications that are not just functional,
               but also maintainable, reliable, and production-ready.
             </p>
           </motion.div>
@@ -274,25 +265,6 @@ export function AboutTab() {
             transition={{ delay: 0.6 }}
             className="border-t border-border pt-6"
           >
-            <h2 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
-              <Award size={20} className="text-primary" />
-              Certifications
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {[
-                "Web Development",
-                "React Development",
-                "Next.js",
-                "MERN Stack",
-              ].map((cert) => (
-                <span
-                  key={cert}
-                  className="px-3 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium"
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>

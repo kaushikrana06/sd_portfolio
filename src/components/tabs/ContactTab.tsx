@@ -227,10 +227,10 @@ export function ContactTab() {
           <p className="text-sm text-muted-foreground mb-3">Or connect with me on:</p>
           <div className="flex items-center gap-3">
             {[
-              { icon: Github, href: "https://github.com/arkakaushik", label: "GitHub" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/kaushik-ghosh-7187a2258/", label: "LinkedIn" },
-              { icon: SiWhatsapp, href: "https://wa.me/918967258388", label: "WhatsApp" },
-              { icon: Mail, href: "mailto:kaushikghosh7215@gmail.com", label: "Email" },
+              { icon: Github, href: "https://github.com/kaushikrana06", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/kaushik-rana-0b8447211/", label: "LinkedIn" },
+              { icon: SiWhatsapp, href: "https://wa.me/9113129737", label: "WhatsApp" },
+              { icon: Mail, href: "mailto:kaushikrana.0603@gmail.com", label: "Email" },
             ].map((social) => (
               <motion.a
                 key={social.label}

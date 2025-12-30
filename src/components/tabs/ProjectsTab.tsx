@@ -99,15 +99,6 @@ export function ProjectsTab({ selectedProject }: ProjectsTabProps) {
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-8">
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-3 mb-4">
-                    {/* Avatar */}
-                    <motion.div whileHover={{ scale: 1.05 }} className="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 rounded-full overflow-hidden bg-[#333333]">
-                      <img
-                        src={`${selectedProject.img}`}
-                        alt={selectedProject.name}
-                        className="w-full h-full object-contain rounded-full"
-                      />
-                    </motion.div>
-
                     {/* Text Content */}
                     <div className="flex-1 min-w-0">
                       <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#cccccc]">
